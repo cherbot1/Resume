@@ -1,0 +1,27 @@
+body {
+    font: 16px 'Montserrat', 'Roboto', sans-serif;
+}
+
+.head{
+    display: flex;
+    max-width: 100%;
+    justify-content: flex-end;;
+}
+.head-wrapper{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: ghostwhite;
+}
+.head_ttl{
+    margin: 15px 30px;
+}
+.greeting{
+    background: #474A51;
+    background-image: url("../media/grtng.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 100vh;
+}
