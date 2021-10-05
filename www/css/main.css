@@ -1,6 +1,7 @@
 body {
     font: 16px 'Montserrat', 'Roboto', sans-serif;
-    color: #474A51
+    color: #474A51;
+    background: #FCFCEE;
 }
 a {
     text-decoration: none;
@@ -9,22 +10,19 @@ a {
 .head{
     display: flex;
     max-width: 100%;
-    justify-content: flex-end;;
+    justify-content: center;
 }
-.head-wrapper{
+.topmenu-wrapper{
     display: flex;
     flex-direction: row;
     text-decoration: none;
+    margin: 30px 0 30px 0;
 }
 .head_ttl{
     margin: 15px 30px;
 }
 .greeting{
     z-index: 5;
-    background: #F5FFFA;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     max-width: 100%;
     height: 100vh;
     margin-left:20%
@@ -85,4 +83,19 @@ a {
 }
 .fa-instagram:before {
     color: white;
+}
+.description{
+    margin: 0 5% 0 5%;
+}
+.description-title{
+    text-align: center;
+}
+.description-txt{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.description-exp{
+    text-align: start;
 }
