@@ -1,7 +1,7 @@
 body {
     font: 16px 'Anonymous Pro', 'Roboto', sans-serif;
     color: #474A51;
-    background: #FCFCEE;
+    background: #ffffff;
 }
 a {
     text-decoration: none;
@@ -157,6 +157,5 @@ a {
 }
 .examples-title{
     display: inline;
-    border-bottom: 1px solid #f9dd94;
     margin-bottom: 20px;
 }
