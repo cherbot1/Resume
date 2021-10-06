@@ -31,6 +31,7 @@ a {
     font-weight: bold;
     color: white;
     text-shadow: 2px 2px black;
+    text-align: center;
 }
 .greeting{
     z-index: 5;
@@ -158,4 +159,12 @@ a {
 .examples-title{
     display: inline;
     margin-bottom: 20px;
+}
+.exmp-btn{
+    background-color: #e6bd44;
+    border-radius: 5px;
+    margin-bottom: 2%;
+}
+.exmp-btn:hover{
+    background-color: #face4a;
 }

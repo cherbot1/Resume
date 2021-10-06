@@ -5,14 +5,15 @@
     <title>
         Резюме
     </title>
+    <script src='http://code.jquery.com/jquery-2.1.1.min.js'></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/fa/all.min.css">
-    <script src="js/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="js/script.js"></script>
 </head>
 <body>
 <aside class="page-sidebar">
@@ -28,8 +29,8 @@
     </div>
     -->
     <div class="side_menu">
-        <a href="" class="head_ttl"> ОБО МНЕ</a>
-        <a href="" class="head_ttl"> РАБОТЫ </a>
+        <a href="#about" class="head_ttl"> ОБО МНЕ</a>
+        <a href="#exmpl" class="head_ttl"> РАБОТЫ </a>
         <a href="" class="head_ttl"> РЕКОМЕНДАЦИИ </a>
         <a href="" class="head_ttl"> ОБРАТНАЯ СВЯЗЬ </a>
     </div>
@@ -52,7 +53,7 @@
     </div>
 
 </aside>
-<section class="greeting">
+<section class="greeting" id="about">
     <!--
     <header class="head">
         <div class="topmenu-wrapper">
@@ -134,7 +135,7 @@
         </div>
     </div>
 </section>
-<section class="examples">
+<section class="examples" id="exmpl">
     <div class="examples-title">
         <h2>
             Примеры работ
@@ -178,7 +179,7 @@
                 </p>
             </div>
         </div>
-        <div class="exmp-point">
+        <div class="exmp-point exmp-point-hidden" style="display: none">
             <div class="point-img col-md-5">
                 <a href="https://europump.su/" target="_blank">
                     <img class="img-gray" src="media/exmp-2.png">
@@ -196,7 +197,7 @@
                 </p>
             </div>
         </div>
-        <div class="exmp-point">
+        <div class="exmp-point exmp-point-hidden" style="display: none">
             <div class="point-img col-md-5">
                 <a href="https://finn-rotor.ru/" target="_blank">
                     <img class="img-gray" src="media/exmp-3.png">
@@ -214,7 +215,7 @@
                 </p>
             </div>
         </div>
-        <div class="exmp-point">
+        <div class="exmp-point exmp-point-hidden" style="display: none">
             <div class="point-img col-md-5">
                 <a href="https://profilibrus.ru/" target="_blank">
                     <img class="img-gray" src="media/exmp-5.png">
@@ -232,11 +233,18 @@
                 </p>
             </div>
         </div>
-        <div class="link-more">
-            <a class="btn" id="toggleButton">
+        <div id="more" class="link-more">
+            <a class="btn exmp-btn" id="toggleButton">
                 ЕЩЁ
             </a>
         </div>
+        <!--
+        <div id="roll_up" class="link-more">
+            <a class="btn exmp-btn" id="rollButton">
+                СВЕРНУТЬ
+            </a>
+        </div>
+        -->
 </section>
 
 
