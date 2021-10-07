@@ -111,9 +111,6 @@ a {
     flex-direction: row;
     justify-content: space-around;
 }
-.description-intro{
-    font-style: italic;
-}
 .description-exp{
     text-align: start;
 }
