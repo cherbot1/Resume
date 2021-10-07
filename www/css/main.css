@@ -1,5 +1,5 @@
 body {
-    font: 16px 'Anonymous Pro', 'Roboto', sans-serif;
+    font: 16px 'helvetica', 'Roboto', sans-serif;
     color: #474A51;
     background: #ffffff;
 }
@@ -32,6 +32,9 @@ a {
     color: white;
     text-shadow: 2px 2px black;
     text-align: center;
+}
+.head_ttl:hover{
+    color: #face4a;
 }
 .greeting{
     z-index: 5;
@@ -111,6 +114,9 @@ a {
     flex-direction: row;
     justify-content: space-around;
 }
+.description-intro a{
+    color: #474A51;
+}
 .description-exp{
     text-align: start;
 }
@@ -164,4 +170,35 @@ a {
 }
 .exmp-btn:hover{
     background-color: #face4a;
+}
+.feedback{
+    margin: 5% 0 5% 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+.form-group{
+    margin: 10px 0 10px 0;
+}
+.form-control{
+    text-align: center;
+}
+.msg-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.msg-form button{
+    margin-top: 10px;
+    background-color: #e6bd44;
+    color: black;
+    border: none;
+}
+.msg-form button:hover{
+    background-color: #face4a;
+    color: black;
 }

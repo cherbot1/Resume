@@ -1,6 +1,6 @@
 $(function () {
     $("#downButton").click(function () {
-        console.log(123);
+        console.log(1);
         $("#more").fadeOut();
         $(".exmp-point-hidden").slideDown();
         $("#clear").slideDown()
@@ -9,7 +9,7 @@ $(function () {
 });
 $(function () {
     $("#upButton").click(function () {
-        console.log(124);
+        console.log(2);
         $("#clear").fadeOut();
         $(".exmp-point-hidden").slideUp();
         $("#more").fadeIn();
