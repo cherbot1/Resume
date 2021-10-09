@@ -6,7 +6,9 @@ body {
 a {
     text-decoration: none;
 }
-
+.photo-mobile{
+    display: none;
+}
 .head{
     display: flex;
     max-width: 100%;
@@ -23,7 +25,7 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 3%;
+    margin-bottom: 5%;
 }
 .head_ttl{
     z-index: 5;
@@ -117,6 +119,9 @@ a {
 .description-intro a{
     color: #474A51;
 }
+.description-intro a:hover{
+    color: #face4a;
+}
 .description-exp{
     text-align: start;
 }
@@ -172,10 +177,9 @@ a {
     background-color: #face4a;
 }
 .feedback{
-    margin: 5% 0 5% 20%;
+    margin: 2% 2% 5% 22%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
 }
 .row{
     display: flex;
@@ -201,4 +205,31 @@ a {
 .msg-form button:hover{
     background-color: #face4a;
     color: black;
+}
+.contacts-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2% 2% 2%;
+    justify-content: space-between;
+}
+.feedback-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contacts-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: normal;
+}
+.contacts-item-msngr a{
+    color: #474A51;
+}
+.contacts-item-msngr{
+    line-height: 2em;
+}
+.contacts-item-msngr a:hover{
+    color: #face4a;
 }

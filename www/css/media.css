@@ -1,0 +1,45 @@
+@media only screen
+and (orientation: portrait)
+and (max-width: 767px){
+    .greeting{
+        margin: 4% 2% 0 3%;
+    }
+    .examples{
+        margin: 4% 2% 0 3%;
+    }
+    .feedback{
+        margin: 4% 2% 0 3%;
+    }
+    .page-sidebar{
+        display: none;
+    }
+    .description-txt{
+        flex-direction: column;
+    }
+    .description {
+        margin: 2% 0 2% 2%;
+    }
+    .exmp-point {
+        flex-direction: column;
+    }
+    .img-gray{
+        filter: none;
+        -webkit-filter: none;
+        -moz-filter: none;
+        -ms-filter: none;
+        -o-filter: none;
+    }
+    .description-exp {
+        text-align: center;
+    }
+    .feedback {
+        flex-direction: column;
+    }
+    .photo-mobile{
+        float: left;
+        display: block;
+        max-width: 37%;
+        margin: 0 2% 5% 0;
+        border-radius: 10px;
+    }
+}
