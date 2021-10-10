@@ -3,9 +3,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
-        Резюме
+        Резюме Михайлова О.А.
     </title>
-    <script src='http://code.jquery.com/jquery-2.1.1.min.js'></script>
+    <script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <script src="js/script.js"></script>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
 <aside class="page-sidebar">
@@ -45,9 +46,26 @@
 
             </i>
         </a>
+        <a title="vk" target="_blank" href="https://vk.com/tanmed">
+            <i class="fab fa-2x fa-vk">
+
+            </i>
+        </a>
     </div>
 
 </aside>
+<div class="menu">
+    <a class="menu-triger" href="#"></a>
+    <div class="menu-popup">
+        <a class="menu-close" href="#"></a>
+        <ul>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#experience">Навыки</a></li>
+            <li><a href="#exmpl">Примеры работ</a></li>
+            <li><a href="#fdbck">Обратная связь</a></li>
+        </ul>
+    </div>
+</div>
 <section class="greeting" id="about">
     <div class="description">
         <div class="description-title">
@@ -56,7 +74,7 @@
             </h2> <br> <br>
         </div>
         <div class="description-txt">
-            <div class="description-intro col-sm-6 col-md-5">
+            <div class="description-intro col-sm-10 col-md-12 col-lg-5">
                 <img class="photo-mobile" src="media/photo-mob.jpg">
                 <h5>
                     Меня зовут Михайлов Олег и я отличный кандидат для вашей компании.<br>
@@ -66,10 +84,10 @@
                     С августа 2020 года занимаюсь вёрсткой веб-страниц на HTML/CSS различной сложности на основе
                     технического задания. Выполнял работы как "с нуля", так и вносил изменения в уже работающие сайты. <br>
                     <br>
-                    Умею взвешенно планировать свою работу, выдержаивать сроки выполнения работ, не боюсь трудных
+                    Умею взвешенно планировать свою работу, выдерживать сроки, не боюсь трудных
                     задач и стремлюсь к совершенству при выполнении работы. <br>
                     <br>
-                    На данный момент развиваю себя как Frontend-разработчик, постоянно повышая навыки по данному направлению.<br>
+                    В данный момент активно развиваюсь как Frontend-разработчик, постоянно повышая навыки по данному направлению.<br>
                     <br>
                     Хочу создавать проекты, которыми буду гордиться, и быть частью сильной и сплочённой команды<br>
                     <br>
@@ -81,7 +99,7 @@
                     </i>
                 </a>
             </div>
-            <div class="description-exp col-sm-6 col-md-5">
+            <div id="experience" class="description-exp col-sm-10 col-md-12 col-lg-5">
                     <h5>
                         Кратко о моём опыте и приобретённых навыках:<br>
                     </h5>
@@ -140,12 +158,12 @@
     </div>
     <div class="examples-table">
         <div class="exmp-point">
-            <div class="point-img col-md-5">
+            <div class="point-img col-md-12 col-lg-5">
                 <a href="https://www.helivert.aero/" target="_blank">
                     <img class="img-gray" src="media/exmp-1.png">
                 </a>
             </div>
-            <div class="point-descr col-md-7">
+            <div class="point-descr col-md-12 col-lg-7">
                 <h3>
                     <a href="https://www.helivert.aero/" target="_blank">
                         helivert.aero
@@ -159,12 +177,12 @@
             </div>
         </div>
         <div class="exmp-point">
-            <div class="point-img col-md-5">
+            <div class="point-img col-md-12 col-lg-5">
                 <a href="http://dendrarium.msk.ru/" target="_blank">
                     <img class="img-gray" src="media/exmp-4.png">
                 </a>
             </div>
-            <div class="point-descr col-md-7">
+            <div class="point-descr col-md-12 col-lg-7">
                 <h3>
                     <a href="http://dendrarium.msk.ru/" target="_blank">
                         dendrarium.msk.ru
@@ -177,12 +195,12 @@
             </div>
         </div>
         <div class="exmp-point exmp-point-hidden" style="display: none">
-            <div class="point-img col-md-5">
+            <div class="point-img col-md-12 col-lg-5">
                 <a href="https://europump.su/" target="_blank">
                     <img class="img-gray" src="media/exmp-2.png">
                 </a>
             </div>
-            <div class="point-descr col-md-7">
+            <div class="point-descr col-md-12 col-lg-7">
                 <h3>
                     <a href="https://europump.su/" target="_blank">
                         europump.su
@@ -195,12 +213,12 @@
             </div>
         </div>
         <div class="exmp-point exmp-point-hidden" style="display: none">
-            <div class="point-img col-md-5">
+            <div class="point-img col-md-12 col-lg-5">
                 <a href="https://finn-rotor.ru/" target="_blank">
                     <img class="img-gray" src="media/exmp-3.png">
                 </a>
             </div>
-            <div class="point-descr col-md-7">
+            <div class="point-descr col-md-12 col-lg-7">
                 <h3>
                     <a href="https://finn-rotor.ru/" target="_blank">
                         finn-rotor.ru
@@ -213,12 +231,12 @@
             </div>
         </div>
         <div class="exmp-point exmp-point-hidden" style="display: none">
-            <div class="point-img col-md-5">
+            <div class="point-img col-md-12 col-lg-5">
                 <a href="https://profilibrus.ru/" target="_blank">
                     <img class="img-gray" src="media/exmp-5.png">
                 </a>
             </div>
-            <div class="point-descr col-md-7">
+            <div class="point-descr col-md-12 col-lg-7">
                 <h3>
                     <a href="https://profilibrus.ru/" target="_blank">
                         profilibrus.ru
@@ -247,32 +265,12 @@
             Контакты
         </h2>
         <div class="contacts-row">
-            <div class="contacts-item">
-                <p>
-                    <b>Телефон</b>
-                </p>
-            </div>
-            <div class="contacts-item">
-                <a href="tel:+79647059519"> +7 (964) 705-95-19 </a>
-            </div>
-        </div>
-        <div class="contacts-row">
-            <div class="contacts-item">
-                <p>
-                    <b>Email</b>
-                </p>
-            </div>
-            <div class="contacts-item">
-                <a href="mailto:cherbot@mail.ru"> cherbot@mail.ru </a>
-            </div>
-        </div>
-        <div class="contacts-row">
             <div class="contacts-item-msngr">
-                <a title="WhatsApp" target="_blank" href="https://wa.me/79647059519">
-                    <i class="fab fa-whatsapp">
+                <a href="mailto:omihajlov-resume@mail.ru">
+                    <i class="fas fa-envelope">
 
                     </i>
-                    Напишите мне в WhatsApp
+                    omihajlov-resume@mail.ru
                 </a>
             </div>
         </div>
@@ -296,37 +294,57 @@
                 </a>
             </div>
         </div>
+        <div class="contacts-row">
+            <div class="contacts-item-msngr">
+                <a class="inst" title="Instagram" target="_blank" href="https://www.instagram.com/tancmed/">
+                    <i class="fab fa-instagram">
+
+                    </i>
+                    Мой Instagram
+                </a>
+            </div>
+        </div>
+        <div class="contacts-row">
+            <div class="contacts-item-msngr">
+                <a title="Github" target="_blank" href="https://github.com/cherbot1">
+                <i class="fab fa-github-square">
+
+                </i>
+                Репозиторий Github
+                </a>
+            </div>
+        </div>
     </div>
 
     <div class="feedback-wrapper col-lg-6">
         <h2>
             Форма обратной связи
         </h2>
-        <form action="#">
+        <form action="email.php" autocomplete="off" method="post">
             <div class="row">
                 <div class="col-md-5 col-lg-6">
                     <div class="form-group">
-                        <input type="text" placeholder="Имя" class="form-control" required>
+                        <input name="username" type="text" placeholder="Имя" class="form-control" required>
                     </div>
                 </div>
                 <div class="col-md-5 col-lg-6">
                     <div class="form-group">
-                        <input type="text" placeholder="Фамилия" class="form-control">
+                        <input name="usersurname" type="text" placeholder="Фамилия" class="form-control">
                     </div>
                 </div>
                 <div class="col-md-5 col-lg-6">
                     <div class="form-group">
-                        <input type="text" placeholder="Email" class="form-control" required>
+                        <input name='useremail' type="text" placeholder="Email" class="form-control" required>
                     </div>
                 </div>
                 <div class="col-md-5 col-lg-6">
                     <div class="form-group">
-                        <input type="text" placeholder="Телефон" class="form-control" required>
+                        <input name='usernumber' type="text" placeholder="Телефон" class="form-control" required>
                     </div>
                 </div>
                 <div class="msg-form col-md-10 col-lg-12">
-                    <textarea placeholder="Ваше сообщение" class="form-control" cols="30" rows="5" style="text-align: left"></textarea>
-                    <button class="btn btn-primary">
+                    <textarea name='userquestion' placeholder="Ваше сообщение" class="form-control" cols="30" rows="5" style="text-align: left"></textarea>
+                    <button class="btn btn-primary" type='submit'>
                         ОТПРАВИТЬ
                     </button>
                 </div>
@@ -334,6 +352,29 @@
         </form>
     </div>
 </section>
+
+<div class="modal" tabindex="-1" role="dialog" id="myModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Спасибо!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Ваше сообщение отправлено</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"> Закрыть </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    © О. А. Михайлов, 2021 г.
+</footer>
 
 
 

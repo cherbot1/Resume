@@ -1,6 +1,6 @@
 @media only screen
 and (orientation: portrait)
-and (max-width: 767px){
+and (max-width: 768px){
     .greeting{
         margin: 4% 2% 0 3%;
     }
@@ -41,5 +41,46 @@ and (max-width: 767px){
         max-width: 37%;
         margin: 0 2% 5% 0;
         border-radius: 10px;
+    }
+    .footer {
+        margin: 2% 0 0 0;
+    }
+    .menu-triger {
+        display: block;
+    }
+}
+
+@media only screen
+and (orientation: landscape)
+and (max-width: 1023px){
+    .description-txt {
+        flex-direction: column;
+        align-items: center;
+    }
+    .fa-2x {
+        font-size: 1.2em!important;
+    }
+    .side_menu a{
+        font-size: 14px;
+    }
+    .description-exp {
+        text-align: center;
+    }
+    .exmp-point {
+        margin: 3%;
+        flex-direction: column;
+    }
+    .img-gray{
+        filter: none;
+        -webkit-filter: none;
+        -moz-filter: none;
+        -ms-filter: none;
+        -o-filter: none;
+    }
+    .feedback {
+        flex-direction: column;
+    }
+    .row {
+        margin: 0 6% 0 6%;
     }
 }

@@ -2,6 +2,7 @@ body {
     font: 16px 'helvetica', 'Roboto', sans-serif;
     color: #474A51;
     background: #ffffff;
+    margin: 0 0 0 0;
 }
 a {
     text-decoration: none;
@@ -65,7 +66,7 @@ a {
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: url('C:/Users/Настя/resume/www/media/sidebar.JPG');
+    background-image: url('../media/sidebar.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 100%;
@@ -92,6 +93,9 @@ a {
 .social-media a {
     color: white;
 }
+.social-media a:hover {
+    color: #face4a;
+}
 .sidebar-overlay{
     position: absolute;
     z-index: 1;
@@ -100,9 +104,6 @@ a {
     bottom: 0;
     left: 0;
     background: rgba(0,0,0,0.35);
-}
-.fa-instagram:before {
-    color: white;
 }
 .description{
     margin: 2% 0 2% 0;
@@ -138,6 +139,13 @@ a {
     flex-direction: row-reverse;
     justify-content: space-between;
 }
+.exmp-point:hover img{
+    filter:none;
+    -webkit-filter: none;
+    -moz-filter: none;
+    -ms-filter: none;
+    -o-filter: none;
+}
 .point-img{
     border: solid 1px #414545;
 }
@@ -150,13 +158,6 @@ a {
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
-}
-.img-gray:hover{
-    filter:none;
-    -webkit-filter: none;
-    -moz-filter: none;
-    -ms-filter: none;
-    -o-filter: none;
 }
 .point-descr{
     padding: 0 15px 0 15px;
@@ -232,4 +233,61 @@ a {
 }
 .contacts-item-msngr a:hover{
     color: #face4a;
+}
+.footer{
+    margin: 2% 0 0 20%;
+    padding: 5px;
+    text-align: center;
+    background-color: lightgray;
+}
+.menu-triger {
+    display: none;
+    width: 25px;
+    height: 25px;
+    background: url(../media/menu.png) 0 0 repeat;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+}
+.menu-close {
+    display: block;
+    width: 28px;
+    height: 28px;
+    background: url(../media/menu.png) 0 0 repeat;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 100;
+}
+.menu-popup {
+    display: none;
+    background: #2c2e3e;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0;
+    box-sizing: border-box;
+    padding: 30px;
+    z-index: 9999;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.menu-popup ul {
+    margin: 0;
+    padding: 0;
+}
+.menu-popup li {
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+}
+.menu-popup li a {
+    font-size: 18px;
+    font-family: "Arial";
+    color: rgb(255, 255, 255);
+    line-height: 1.4;
+    text-decoration: none;
+}
+.body_pointer * {
+    cursor: pointer;
 }

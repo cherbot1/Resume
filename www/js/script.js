@@ -16,31 +16,27 @@ $(function () {
         //$('#toggleSection').slideToggle();
     });
 });
-let burger = document.getElementById('burger'),
-    nav    = document.getElementById('main-nav'),
-    slowmo = document.getElementById('slowmo');
+$('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+})
+$(function() {
+    var $menu_popup = $('.menu-popup');
 
-burger.addEventListener('click', function(e){
-    this.classList.toggle('is-open');
-    nav.classList.toggle('is-open');
-});
+    $(".menu-triger, .menu-close").click(function(){
+        $menu_popup.slideToggle(300, function(){
+            if ($menu_popup.is(':hidden')) {
+                $('body').removeClass('body_pointer');
+            } else {
+                $('body').addClass('body_pointer');
+            }
+        });
+        return false;
+    });
 
-slowmo.addEventListener('click', function(e){
-    this.classList.toggle('is-slowmo');
-});
-
-/* Onload demo - dirty timeout */
-let clickEvent = new Event('click');
-
-window.addEventListener('load', function(e) {
-    slowmo.dispatchEvent(clickEvent);
-    burger.dispatchEvent(clickEvent);
-
-    setTimeout(function(){
-        burger.dispatchEvent(clickEvent);
-
-        setTimeout(function(){
-            slowmo.dispatchEvent(clickEvent);
-        }, 3500);
-    }, 5500);
+    $(document).on('click', function(e){
+        if (!$(e.target).closest('.menu').length){
+            $('body').removeClass('body_pointer');
+            $menu_popup.slideUp(300);
+        }
+    });
 });
